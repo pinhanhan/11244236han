@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#5a147d82;
+    color: #333;
+}
+
+.navbar {
+    text-align: center;
+    padding: 0;
+}
+
+.website-title {
+    background-color: #5a147d; 
+    color: white;
+    font-size: 1.8em;
+    padding: 20px 0;
+    font-family: "Paytone One", sans-serif;
+    margin: 0;
+}
+
+.navbar-menu {
+    background-color: #5a147da4;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px; 
+}
+
+.navbar a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: "Acme", sans-serif;
+    padding: 10px 15px;
+}
+
+
+.navbar a:hover {
+    border-bottom: 2px solid #ffffff; 
+    color: #fff;
+}
+
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    text-align: center; 
+    max-width: 1250px;
+    background-image: url('photo/background.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-photo {
+    margin-right: 50px; 
+    margin-left: -60px;
+}
+
+.profile-photo img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details {
+    max-width: 500px; 
+}
+
+.profile-details h2 {
+    font-size: 2em;
+    color: #5a147d;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    font-family: "Paytone One", sans-serif;
+}
+
+.profile-details h2::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #5a147d;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.profile-details p {
+    margin-bottom: 15px;
+    color: #5a147da4;
+    font-family: "Acme", sans-serif;
+}
+
+
+
+/* 社群媒體圖示 */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.social-icons a {
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.skills-container,
+.experience-container {
+    padding: 60px;
+    border-radius: 10px;
+    max-width: 1250px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url('photo/background.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.skills-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #5a147d;
+    text-align: center;
+    font-family: "Paytone One", sans-serif;
+}
+
+
+
+.skills-wrapper {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.skills-bars,
+.software-container {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.software-container {
+    margin-right: 0; 
+}
+
+.skills-title {
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 1.5em;
+    font-family: "Acme", sans-serif;
+    color: #5a147da4;
+}
+
+.skill {
+    margin-bottom: 20px; 
+}
+
+.progress {
+    background-color: #c8c3c3;
+    border-radius: 5px;
+    height: 15px; 
+    width: 100%; 
+}
+
+.progress-bar {
+    background-color: #5a147da4; 
+    height: 100%; 
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+}
+
+.software-item {
+    text-align: center; 
+    font-family: "Noto Serif TC", serif;
+}
+
+.software-image {
+    width: 90px; 
+    height: 90px; 
+    border-radius: 50%;
+}
+
+.certificates-container {
+    margin-top: 30px; 
+    text-align: center;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+}
+
+.certificate-item {
+    text-align: center; 
+    font-family: "Noto Serif TC", serif;
+}
+
+.certificate-image {
+    width: 450px; 
+    height:250px; 
+}
+
+.experience-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #5a147d;
+    text-align: center;
+    font-family: "Paytone One", sans-serif;
+}
+
+
+.experience-category {
+    font-size: 1.5em;
+    color: #5a147da4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Acme", sans-serif;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+
+.experience-box {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+}
+
+.experience-box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.experience-photo {
+    width: 100%; 
+    height: 280px; 
+    object-fit: cover; 
+}
+
+
+.experience-box p {
+    padding: 10px; 
+    font-size: 1em; 
+    color: #333; 
+    margin: 0; 
+    text-align: center; 
+    font-family: "Noto Serif TC", serif;
+}
+footer {
+    background-color: #5a147d; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 0.9em; 
+    font-family: "Paytone One", sans-serif;
+}
+
+
+footer p {
+    margin: 0; 
+}
